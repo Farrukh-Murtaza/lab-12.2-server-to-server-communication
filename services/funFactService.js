@@ -6,7 +6,7 @@ export const fetchFunFact = async () => {
       "https://uselessfacts.jsph.pl/api/v2/facts/random"
     );
 
-    return response.data;
+    return response.data.text;
   } catch (error) {
     console.error("Failed to fetch fun fact:", error.message);
 
